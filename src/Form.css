@@ -1,0 +1,130 @@
+/* Form.css */
+
+.log{
+    width:80%;
+    margin:5px auto;
+    background-color:#DFE8EF;
+    padding: 20px;
+    font-size: 40;
+      
+}
+.form {
+    width:80%;
+    margin:10px auto;
+  
+    padding: 20px;
+    
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .invoice-number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .invoice-number input {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .invoice-number button {
+    width: 15%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F82D4;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .invoice-item {
+    margin-top: 20px;
+  }
+  
+  .invoice-item table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .invoice-item th,
+  .invoice-item td {
+    padding: 10px;
+    border: 1px solid gray;
+    text-align: center;
+  }
+  
+  .complaint-category {
+    margin-top: 20px;
+  }
+  
+  .complaint-category form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .complaint-category label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .complaint-category select,
+  .complaint-category textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .complaint-category textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .submit-button {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit-button button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#0F82D4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .form {
+      width: 90%;
+    }
+  
+    .invoice-number input {
+      width: 70%;
+    }
+  
+    .invoice-number button {
+      width: 20%;
+    }
+  
+    .complaint-category form {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  
